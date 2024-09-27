@@ -10,12 +10,20 @@
             margin: 0;
             overflow: hidden;
         }
+
+        /* Увеличение модели в два раза */
+        model-viewer {
+            width: 100%;
+            height: 100vh;
+            transform: scale(2); /* Увеличение в 2 раза */
+            transform-origin: center;
+        }
     </style>
 </head>
 <body>
 
     <!-- Модель увеличена в два раза -->
-    <model-viewer id="viewer" src="git1.glb" alt="3D Model" camera-controls scale="5 5 5" style="width: 100%; height: 100vh;">
+    <model-viewer id="viewer" src="git1.glb" alt="3D Model" camera-controls style="width: 100%; height: 100vh;">
     </model-viewer>
 
 </body>
